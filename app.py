@@ -24,8 +24,8 @@ def level1():
             session['level1'] = True
             return redirect(url_for('level2'))
         else:
-            return render_template('level1.html', error="Wrong answer, try again.")
-    return render_template('level1.html')
+            return render_template('index.html', error="Wrong answer, try again.")
+    return render_template('index.html')
 
 # Level 2 Route
 @app.route('/level2', methods=['GET', 'POST'])
