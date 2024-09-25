@@ -5,9 +5,9 @@ app.secret_key = 'your_secret_key_here'
 
 # Predefined riddle answers
 answers = {
-    'level1': 'Answer1',
-    'level2': 'Answer2',
-    'level3': 'Answer3'
+    'level1': 'Tamanna',
+    'level2': 'Shubh',
+    'level3': 'Aryan'
 }
 
 @app.route('/')

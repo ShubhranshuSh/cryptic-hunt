@@ -28,8 +28,9 @@
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            max-width: 90%; /* Responsive width */
             width: 100%;
+            overflow: hidden;
         }
         h1 {
             font-size: 2.5rem;
@@ -69,6 +70,37 @@
             color: #ff6347;
             font-weight: bold;
             margin-top: 1rem;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Adjust heading size */
+            }
+            p {
+                font-size: 1rem; /* Adjust paragraph size */
+            }
+            input[type="text"] {
+                font-size: 1rem; /* Adjust input font size */
+            }
+            button {
+                font-size: 1rem; /* Adjust button font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Further adjust heading size */
+            }
+            p {
+                font-size: 0.9rem; /* Further adjust paragraph size */
+            }
+            input[type="text"] {
+                font-size: 0.9rem; /* Further adjust input font size */
+            }
+            button {
+                font-size: 0.9rem; /* Further adjust button font size */
+            }
         }
     </style>
 </head>

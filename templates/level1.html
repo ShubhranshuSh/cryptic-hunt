@@ -27,8 +27,9 @@
             padding: 2rem;
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-            max-width: 600px;
+            max-width: 90%; /* Make it responsive */
             width: 100%;
+            overflow: hidden; /* Prevent overflow issues */
         }
         h1 {
             font-size: 2.5rem;
@@ -44,7 +45,7 @@
         input[type="text"] {
             padding: 0.8rem;
             width: 100%;
-            max-width: 400px;
+            max-width: 400px; /* Maintain a max-width */
             border: none;
             border-radius: 10px;
             margin-bottom: 1.2rem;
@@ -69,12 +70,50 @@
             font-weight: bold;
             margin-top: 1rem;
         }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* Adjust heading size */
+            }
+            p {
+                font-size: 1rem; /* Adjust paragraph size */
+            }
+            input[type="text"] {
+                font-size: 1rem; /* Adjust input font size */
+            }
+            button {
+                font-size: 1rem; /* Adjust button font size */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Further adjust heading size */
+            }
+            p {
+                font-size: 0.9rem; /* Further adjust paragraph size */
+            }
+            input[type="text"] {
+                font-size: 0.9rem; /* Further adjust input font size */
+            }
+            button {
+                font-size: 0.9rem; /* Further adjust button font size */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Riddle 1</h1>
-        <p>What has to be broken before you can use it?</p>
+        <p>Riddle Beta Riddle Beta kaha gye tha <br>
+            Data ki tokri mai so rahe tha <br>
+            Issues ne lath mari ro rahe tha <br>
+            Website Website kehke so rahe tha <br>
+            Uthte jagte bss sbko thok rahe tha <br>
+            Desi nuske Ghor ke pii rahe tha <br>
+            Subah se raat bss marr rahe tha <br>
+            na jane kb kaha kis kone mai laptop ke aage jee rahe tha</p>
         <form method="POST">
             <input type="text" name="answer" required>
             <button type="submit">Submit</button>
